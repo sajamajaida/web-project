@@ -1,0 +1,417 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 27px;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 19px;
+}
+
+.landing {
+    background-image: url("../images/pexels-photo-509922.jpeg");
+    background-size: cover;
+    height: 125vh;
+}
+
+.landing h2 {
+    text-align: center;
+    padding: 60px 60px 30px;
+    margin: 0;
+    font-size: 30px;
+    color: #aaaaaa;
+}
+
+.landing .text {
+    max-width: 400px;
+    margin: auto;
+    font-size: 19px;
+}
+
+.landing .text p {
+    text-align: center;
+    margin: 0;
+    color: #aaaaaa;
+}
+
+.about .section1 {
+    background-color: #aca790;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px; */
+}
+
+.about .section1 .row {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.about .section1 .row .heading {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.about .section1 .row .heading h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.about .section1 .row .heading p {
+    font-size: 20px;
+}
+
+.about .section1 .row .txt {
+    max-width: 500px;
+    background-color: #dedbcf;
+    margin: 60px 0 -15px;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #b8b0a7;
+    position: relative;
+}
+
+.about .section2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.about .section2 img {
+    width: 8%;
+}
+
+.about .section3 {
+    background-color: #f2f2f2;
+    height: 130vh;
+}
+
+.about .section3 .container .heading {
+    position: relative;
+}
+
+
+.about .section3 .container .heading h3 {
+    font-size: 27px;
+    font-weight: 400;
+    padding: 60px 0 0;
+}
+
+.about .section3 .container .heading p {
+    font-size: 22px;
+}
+
+.about .section3 .container .images {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.about .section3 .container .images .img1 {
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+
+.about .section3 .container .images .image2 img {
+    width: 25%;
+    position: absolute;
+    right: 75px;
+    top: 27px;
+}
+
+.about .section3 .container .images .image2 {
+    position: relative;
+    width: 100%;
+}
+
+.about .section3 .container .images .image2 p {
+    position: absolute;
+    max-width: 380px;
+    line-height: 1.6;
+    right: 35px;
+    top: 540px;
+    color: #b8b0a7;
+    font-size: 18px;
+}
+
+.about .section4 {
+    background-color: #aca790;
+    height: 95vh;
+    position: relative;
+}
+
+.about .section4 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .section4 .container .image {
+    height: 75%;
+    width: 32%;
+    position: absolute;
+    right: 110px;
+    top: 12%;
+}
+
+.about .section4 .container .image img {
+    width: 100%;
+}
+
+.about .section4 .container .txt {
+    position: absolute;
+    top: 27%;
+    max-width: 450px;
+}
+
+.about .section4 .container .txt p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+    padding: 0 30px;
+    position: relative
+}
+
+.about .section4 .container .txt p::before {
+    content: "";
+    width: 10px;
+    height: calc(100% + 15px);
+    background-color: white;
+    position: absolute;
+    left: -8px;
+    top: -4%;
+}
+
+.about .section5 .container {
+    height: 120vh;
+    background-color: #f2f2f2;
+}
+
+.about .section5 .container .heading h3 {
+    font-size: 27px;
+    font-weight: 400;
+    padding: 60px 0 0;
+    margin: 0;
+}
+
+.about .section5 .container .heading p {
+    font-size: 19px;
+    max-width: 320px;
+    color: #a2a0a0dd;
+}
+
+.about .section5 .container .images {
+    display: flex;
+    justify-content: space-between;
+    height: 75%;
+    position: relative;
+}
+
+.about .section5 .container .images img {
+    width: 30%;
+    height: 80%;
+}
+
+.about .section5 .container .images img:first-child {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 50px;
+}
+
+.about .section5 .container .images img:not(:first-child) {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.about .section5 .container .images p {
+    position: absolute;
+    bottom: 35px;
+    left: 65%;
+    font-size: 14px;
+}
+
+.about .section6 .container {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about .section6 .container img {
+    width: 23%;
+    height: 57%;
+    position: absolute;
+    bottom: 26%;
+}
+
+.about .section6 .container::before {
+    content: "<";
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    width: 40px;
+    height: 40px;
+    background-color: #aca790;
+    position: absolute;
+    bottom: 55px;
+}
+
+.about .section6 .container::after {
+    content: ">";
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    width: 40px;
+    height: 40px;
+    background-color: #aca790;
+    position: absolute;
+    left: 190px;
+    bottom: 55px;
+}
+
+.about .section6 .container p {
+    position: absolute;
+    bottom: 49%;
+    left: 37%;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.about .section6 .container span {
+    font-weight: 600;
+}
+
+.about .section6 {
+    position: relative;
+}
+
+.about .section6 .lines {
+    display: flex;
+    position: absolute;
+    right: 50%;
+    bottom: 20%;
+}
+
+.about .section6 .line {
+    background-color: #a2a0a0dd;
+    width: 24px;
+    height: 3px;
+    margin-left: 6px
+}
+
+.contact {
+    height: 110vh;
+    background-color: #aca790;
+}
+
+.contact h3:first-child {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 55px 55px 0;
+    color: white;
+}
+
+.contact .intro {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 350px;
+    color: white;
+}
+
+.contact .cards {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact .cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+}
+
+.contact .cards .card1 {
+    background-color: white;
+    margin-left: 200px;
+}
+
+.contact .cards .card3 {
+    background-color: #dedbcf;
+    margin-left: 200px;
+}
+
+.contact .cards .card2 {
+    background-color: #dedbcf;
+    margin-right: 200px;
+}
+
+.contact .cards .card4 {
+    background-color: white;
+    margin-right: 200px;
+}
+
+.contact .cards .card4 a {
+    color: #b8b0a7;
+    font-size: 17px;
+}
+
+.contact .cards img {
+    width: 50px;
+    margin: 20px;
+}
+
+.contact .cards .color {
+    filter: invert(70%) sepia(16%) saturate(327%) hue-rotate(12deg) brightness(93%) contrast(87%);;
+}
+
+.contact .cards h3 {
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contact .cards p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
